@@ -1,4 +1,4 @@
-use peekable_normalized_line_endings::{normalized, Normalized};
+use normalized_line_endings::{normalized, Normalized};
 use std::iter::Peekable;
 use std::str::Chars;
 

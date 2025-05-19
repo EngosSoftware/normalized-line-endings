@@ -1,9 +1,9 @@
 [package]
-name = "peekable-normalized-line-endings"
-version = "0.1.0"
+name = "normalized-line-endings"
+version = "1.0.0"
 authors = ["Dariusz Depta <depta@engos.de>"]
-description = "Takes..."
+description = "Returns an iterator over chars with all line endings converted to \\n"
 documentation = "https://docs.rs/peekable-normalized-line-endings"
-keywords = ["peekable", "normalized", "line", "endings"]
+keywords = ["normalized", "line", "endings"]
 license = "MIT OR Apache-2.0"
 edition = "2021"
