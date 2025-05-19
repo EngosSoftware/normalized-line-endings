@@ -1,9 +1,10 @@
 [package]
 name = "normalized-line-endings"
-version = "1.0.0"
+version = "0.0.1"
 authors = ["Dariusz Depta <depta@engos.de>"]
 description = "Returns an iterator over chars with all line endings converted to \\n"
-documentation = "https://docs.rs/peekable-normalized-line-endings"
+documentation = "https://docs.rs/normalized-line-endings"
+repository = "https://github.com/EngosSoftware/normalized-line-endings.git"
 keywords = ["normalized", "line", "endings"]
 license = "MIT OR Apache-2.0"
 edition = "2021"

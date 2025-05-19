@@ -29,9 +29,19 @@ tasks:
   doc:
     desc: Generates documentation
     cmds:
+      - cmd: cargo +stable doc
+
+  doc-private:
+    desc: Generates documentation
+    cmds:
       - cmd: cargo +stable doc --document-private-items
 
   doc-open:
+    desc: Generates documentation and opens in browser
+    cmds:
+      - cmd: cargo +stable doc --open
+
+  doc-private-open:
     desc: Generates documentation and opens in browser
     cmds:
       - cmd: cargo +stable doc --open --document-private-items

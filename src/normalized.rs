@@ -1,8 +1,8 @@
-//! # Implementation of normalized line endings
+//! # Iterator implementation
 
 /// Trait for iterating over characters with normalized line endings.
 pub trait Normalized: Iterator<Item = char> {
-  /// Returns an iterator over characters with all line endings converted to `\n`.
+  /// Returns an iterator over characters with normalized line endings.
   fn normalized(self) -> impl Iterator<Item = char>;
 }
 
@@ -15,7 +15,7 @@ where
   }
 }
 
-/// Returns an iterator over characters with all line endings converted to `\n`.
+/// Returns an iterator over characters with normalized line endings.
 pub fn normalized(iter: impl Iterator<Item = char>) -> impl Iterator<Item = char> {
   NormalizedLineEndings { iter, state: State::AnyCharacter }
 }

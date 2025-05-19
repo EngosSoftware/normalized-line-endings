@@ -1,4 +1,4 @@
-//! Iterator over characters with all line endings converted to `\n`
+//! # Iterator over characters with normalized line endings
 
 #![deny(missing_docs)]
 #![deny(rustdoc::broken_intra_doc_links)]
