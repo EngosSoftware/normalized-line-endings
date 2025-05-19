@@ -1,0 +1,10 @@
+//! AAA
+
+// #![deny(missing_docs)]
+// #![deny(rustdoc::broken_intra_doc_links)]
+// #![deny(rustdoc::missing_crate_level_docs)]
+
+mod normalized;
+mod peekable;
+
+pub use normalized::normalized;
