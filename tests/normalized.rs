@@ -28,9 +28,31 @@ fn _0004() {
 #[test]
 fn _0005() {
   struct Tokenizer<I: Iterator<Item = char>> {
-    chars: Peekable<I>
+    chars: Peekable<I>,
   }
-  let mut tokenizer = Tokenizer{chars: INPUT.chars().normalized().peekable()};
+  let mut tokenizer = Tokenizer {
+    chars: INPUT.chars().normalized().peekable(),
+  };
+  eq(&mut OUTPUT.chars(), &mut tokenizer.chars);
+}
+
+#[test]
+fn _0006() {
+  struct Tokenizer<I: Iterator<Item = char>> {
+    chars: Peekable<I>,
+  }
+
+  impl<I> Tokenizer<I>
+  where
+    I: Iterator<Item = char>,
+  {
+    pub fn new(chars: Peekable<I>) -> Self {
+      Tokenizer { chars }
+    }
+  }
+
+  let mut tokenizer = Tokenizer::new(INPUT.chars().normalized().peekable());
+
   eq(&mut OUTPUT.chars(), &mut tokenizer.chars);
 }
 
