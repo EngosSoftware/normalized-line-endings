@@ -25,6 +25,15 @@ fn _0004() {
   eq(&mut OUTPUT.chars(), &mut INPUT.chars().normalized().peekable());
 }
 
+#[test]
+fn _0005() {
+  struct Tokenizer<I: Iterator<Item = char>> {
+    chars: Peekable<I>
+  }
+  let mut tokenizer = Tokenizer{chars: INPUT.chars().normalized().peekable()};
+  eq(&mut OUTPUT.chars(), &mut tokenizer.chars);
+}
+
 fn eq(expected_chars: &mut Chars, peekable_chars: &mut Peekable<impl Iterator<Item = char>>) {
   assert_eq!(expected_chars.next().unwrap(), peekable_chars.next().unwrap());
   while peekable_chars.peek().is_some() {

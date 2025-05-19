@@ -1,7 +1,7 @@
 //! # Iterator implementation
 
 /// Trait for iterating over characters with normalized line endings.
-pub trait Normalized: Iterator<Item = char> {
+pub trait Normalized: Iterator<Item = char> + Sized{
   /// Returns an iterator over characters with normalized line endings.
   fn normalized(self) -> impl Iterator<Item = char>;
 }
