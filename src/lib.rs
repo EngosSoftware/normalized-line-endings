@@ -7,4 +7,4 @@
 mod normalized;
 mod peekable;
 
-pub use normalized::normalized;
+pub use normalized::{normalized, Normalized};
