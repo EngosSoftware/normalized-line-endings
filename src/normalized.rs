@@ -1,5 +1,6 @@
-//! aaa
+//! # Implementation of normalized line endings
 
+/// Trait for iterating over characters with normalized line endings.
 pub trait Normalized: Iterator<Item = char> {
   fn normalized(self) -> impl Iterator<Item = char>;
 }
@@ -12,6 +13,7 @@ where
     normalized(self)
   }
 }
+
 pub fn normalized(iter: impl Iterator<Item = char>) -> impl Iterator<Item = char> {
   NormalizedLineEndings { iter, state: State::AnyCharacter }
 }
