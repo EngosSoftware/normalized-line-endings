@@ -8,3 +8,10 @@ repository = "https://github.com/EngosSoftware/normalized-line-endings.git"
 keywords = ["normalized", "line", "endings", "iterator"]
 license = "MIT OR Apache-2.0"
 edition = "2021"
+exclude = [
+    "tests/",
+    "rustfmt.toml",
+    "Taskfile.yml",
+    ".github/",
+    ".gitignore"
+]
