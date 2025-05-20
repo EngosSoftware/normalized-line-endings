@@ -42,11 +42,11 @@ For example:
 The normalized iterator can be created using standalone function `normalized`
 or by calling the method `normalized` on any iterator over characters.
 
-> This work was inspired by [normalize-line-endings](https://crates.io/crates/normalize-line-endings) crate.
+This work was inspired by [normalize-line-endings](https://crates.io/crates/normalize-line-endings) crate.
 
 ## Examples
 
-### Using standalone function `normalized`
+### Using standalone function
 
 ```Rust
 use normalized_line_endings::normalized;
@@ -58,7 +58,7 @@ assert_eq!(
 );
 ```
 
-### Using `Normalized` trait extension
+### Using trait extension
 
 ```Rust
 use normalized_line_endings::Normalized;
