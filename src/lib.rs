@@ -1,4 +1,4 @@
-//! # Iterator over characters with normalized line endings
+//! # Iterator over characters with normalized line endings.
 
 #![no_std]
 #![deny(missing_docs)]

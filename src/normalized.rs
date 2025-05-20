@@ -1,7 +1,7 @@
-//! # Iterator implementation
+//! # Normalized iterator implementation
 
 /// Trait for iterating over characters with normalized line endings.
-pub trait Normalized: Iterator<Item = char> + Sized{
+pub trait Normalized: Iterator<Item = char> {
   /// Returns an iterator over characters with normalized line endings.
   fn normalized(self) -> impl Iterator<Item = char>;
 }
@@ -17,23 +17,16 @@ where
 
 /// Returns an iterator over characters with normalized line endings.
 pub fn normalized(iter: impl Iterator<Item = char>) -> impl Iterator<Item = char> {
-  NormalizedLineEndings { iter, state: State::AnyCharacter }
+  NormalizedLineEndings { iter, peeked: None }
 }
 
-/// Line feed.
-const LF: char = '\n';
-
-/// Carriage return.
 const CR: char = '\r';
 
-enum State {
-  AnyCharacter,
-  CarriageReturn,
-}
+const LF: char = '\n';
 
 struct NormalizedLineEndings<I> {
   iter: I,
-  state: State,
+  peeked: Option<char>,
 }
 
 impl<I> Iterator for NormalizedLineEndings<I>
@@ -43,25 +36,13 @@ where
   type Item = char;
 
   fn next(&mut self) -> Option<char> {
-    match self.iter.next() {
-      Some(LF) => match self.state {
-        State::CarriageReturn => match self.iter.next() {
-          Some(CR) => Some(LF),
-          other => {
-            self.state = State::AnyCharacter;
-            other
-          }
-        },
-        State::AnyCharacter => Some(LF),
-      },
+    match self.peeked.take().or_else(|| self.iter.next()) {
+      Some(LF) => Some(LF),
       Some(CR) => {
-        self.state = State::CarriageReturn;
+        self.peeked = self.iter.next().filter(|ch| *ch != LF);
         Some(LF)
       }
-      other => {
-        self.state = State::AnyCharacter;
-        other
-      }
+      other => other,
     }
   }
 }
