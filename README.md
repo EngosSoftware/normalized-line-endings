@@ -84,4 +84,7 @@ at your option.
 Any contributions to [**normalized-line-endings**][repository-url] are greatly appreciated.
 All contributions intentionally submitted for inclusion in the work by you,
 shall be dual licensed as above, without any additional terms or conditions.
+
+---
+
 Brought to you with 💙 by [Engos Software](https://engos.de)
