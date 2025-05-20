@@ -1,4 +1,41 @@
 //! # Iterator over characters with normalized line endings
+//!
+//! The **Normalized Line Endings** crate provides an iterator over characters
+//! with normalized line endings, meaning all valid line endings in the input
+//! are converted to a single newline character: \n (U+000A).
+//! For example:
+//! - `\n` → `\n`
+//! - `\r` → `\n`
+//! - `\r\n` → `\n`
+//!
+//! The normalized iterator can be created using standalone function [normalized]
+//! or by calling the method [Normalized::normalized] on any iterator over characters.
+//!
+//! # Examples
+//!
+//! ## Standalone function [normalized]
+//!
+//! ```
+//! use normalized_line_endings::normalized;
+//!
+//! let input = "This is a string \n with \r some \n\r\n random newlines\r\r\n\n";
+//! assert_eq!(
+//!   "This is a string \n with \n some \n\n random newlines\n\n\n",
+//!   normalized(input.chars()).collect::<String>()
+//! );
+//! ```
+//!
+//! ## Using [Normalized] trait extension
+//!
+//! ```
+//! use normalized_line_endings::Normalized;
+//!
+//! let input = "This is a string \n with \r some \n\r\n random newlines\r\r\n\n";
+//! assert_eq!(
+//!   "This is a string \n with \n some \n\n random newlines\n\n\n",
+//!   input.chars().normalized().collect::<String>()
+//! );
+//! ```
 
 #![no_std]
 #![deny(missing_docs)]
