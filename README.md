@@ -44,7 +44,7 @@ or by calling the method `normalized` on any iterator over characters.
 
 ## Examples
 
-### Standalone function [normalized]
+### Using standalone function `normalized`
 
 ```Rust
 use normalized_line_endings::normalized;
@@ -56,7 +56,7 @@ assert_eq!(
 );
 ```
 
-### Using [Normalized] trait extension
+### Using `Normalized` trait extension
 
 ```Rust
 use normalized_line_endings::Normalized;
