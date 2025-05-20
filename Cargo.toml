@@ -1,6 +1,6 @@
 [package]
 name = "normalized-line-endings"
-version = "0.0.4"
+version = "0.0.5"
 authors = ["Dariusz Depta <depta@engos.de>"]
 description = "Returns an iterator over characters with all line endings converted to \\n"
 documentation = "https://docs.rs/normalized-line-endings"
@@ -9,7 +9,6 @@ keywords = ["normalized", "line", "endings", "iterator"]
 license = "MIT OR Apache-2.0"
 edition = "2021"
 exclude = [
-    "tests/",
     "rustfmt.toml",
     "Taskfile.yml",
     ".github/",
