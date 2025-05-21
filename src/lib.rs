@@ -49,6 +49,6 @@ mod line_ending;
 mod normalized;
 
 pub use annotated::{annotated, Annotated, AnnotatedChar};
-pub use common::{CR, LF};
+pub use common::*;
 pub use line_ending::LineEnding;
 pub use normalized::{normalized, Normalized};
