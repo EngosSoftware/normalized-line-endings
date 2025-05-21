@@ -1,4 +1,4 @@
-//! # Iterator implementation
+//! # Normalized iterator implementation
 
 /// Trait extension for iterating over characters with normalized line endings.
 pub trait Normalized: Iterator<Item = char> {
