@@ -1,6 +1,6 @@
 [package]
 name = "normalized-line-endings"
-version = "0.0.8"
+version = "1.0.0"
 authors = ["Dariusz Depta <depta@engos.de>"]
 description = "Returns an iterator over characters with all line endings converted to \\n"
 documentation = "https://docs.rs/normalized-line-endings"
@@ -12,5 +12,6 @@ exclude = [
     "rustfmt.toml",
     "Taskfile.yml",
     ".github/",
-    ".gitignore"
+    ".gitignore",
+    "NOTES_AT_FUTURE_ME.md"
 ]
