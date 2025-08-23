@@ -1,20 +1,19 @@
 //! # Iterator over characters with normalized line endings
 //!
-//! The **Normalized Line Endings** crate provides an iterator over characters
+//! The **Normalized line endings** crate provides an iterator over characters
 //! with normalized line endings, meaning all valid line endings in the input
-//! are converted to a single newline character `\n` (U+000A).
+//! are converted to a single newline character `\n` (U+000A), like this:
 //!
-//! For example:
 //! - `\n` → `\n`
 //! - `\r` → `\n`
 //! - `\r\n` → `\n`
 //!
-//! The normalized iterator can be created using standalone function [normalized]
+//! The normalized iterator can be created using standalone function [normalized()]
 //! or by calling the method [Normalized::normalized] on any iterator over characters.
 //!
 //! # Examples
 //!
-//! ## Standalone function [normalized]
+//! ## Using standalone function [normalized()]
 //!
 //! ```
 //! use normalized_line_endings::normalized;

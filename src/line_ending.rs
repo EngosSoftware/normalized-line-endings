@@ -1,6 +1,6 @@
 //! # Line endings
 
-use super::common::{CR, LF};
+use crate::common::{CR, LF};
 
 /// Line endings.
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash)]

@@ -1,5 +1,7 @@
 //! # Normalized iterator implementation
 
+use crate::common::{CR, LF};
+
 /// Trait extension for iterating over characters with normalized line endings.
 pub trait Normalized: Iterator<Item = char> {
   /// Returns an iterator over characters with normalized line endings.
@@ -54,10 +56,10 @@ impl<I: Iterator<Item = char>> Iterator for NormalizedLineEndings<I> {
 
   fn next(&mut self) -> Option<char> {
     match self.peeked.take().or_else(|| self.iter.next()) {
-      some_lf @ Some('\n') => some_lf,
-      Some('\r') => {
-        self.peeked = self.iter.next().filter(|ch| *ch != '\n');
-        Some('\n')
+      some_lf @ Some(LF) => some_lf,
+      Some(CR) => {
+        self.peeked = self.iter.next().filter(|ch| *ch != LF);
+        Some(LF)
       }
       other => other,
     }

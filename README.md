@@ -24,7 +24,7 @@
 [build-badge-windows]: https://github.com/EngosSoftware/normalized-line-endings/actions/workflows/build-windows.yml/badge.svg
 [build-badge-macos]: https://github.com/EngosSoftware/normalized-line-endings/actions/workflows/build-macos.yml/badge.svg
 [build-badge-macos-arm64]: https://github.com/EngosSoftware/normalized-line-endings/actions/workflows/build-macos-arm64.yml/badge.svg
-[coverage-badge]: https://img.shields.io/badge/Code%20coverage-100%25-green.svg
+[coverage-badge]: https://img.shields.io/badge/coverage-100%25%20%E2%94%82%20100%25%20%E2%94%82%20100%25-21b577.svg
 [cc-badge]: https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg
 [cc-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/CODE_OF_CONDUCT.md
 [mbh-badge]: https://img.shields.io/badge/Made_by-HUMAN-d35400.svg
@@ -32,11 +32,10 @@
 
 ## Overview
 
-The **Normalized Line Endings** crate provides an iterator over characters
+The **Normalized line endings** crate provides an iterator over characters
 with normalized line endings, meaning all valid line endings in the input
-are converted to a single newline character: `\n` (U+000A).
+are converted to a single newline character: `\n` (U+000A), like this:
 
-For example:
 - `\n` → `\n`
 - `\r` → `\n`
 - `\r\n` → `\n`
@@ -53,11 +52,13 @@ This work was inspired by [normalize-line-endings](https://crates.io/crates/norm
 ```rust
 use normalized_line_endings::normalized;
 
-let input = "This is a string \n with \r some \n\r\n random newlines\r\r\n\n";
-assert_eq!(
-  "This is a string \n with \n some \n\n random newlines\n\n\n",
-  normalized(input.chars()).collect::<String>()
-);
+fn using_standalone_function_should_work() {
+  let input = "This is a string \n with \r some \n\r\n random newlines\r\r\n\n";
+  assert_eq!(
+    "This is a string \n with \n some \n\n random newlines\n\n\n",
+    normalized(input.chars()).collect::<String>()
+  );
+}
 ```
 
 ### Using trait extension
@@ -65,11 +66,13 @@ assert_eq!(
 ```rust
 use normalized_line_endings::Normalized;
 
-let input = "This is a string \n with \r some \n\r\n random newlines\r\r\n\n";
-assert_eq!(
-  "This is a string \n with \n some \n\n random newlines\n\n\n",
-  input.chars().normalized().collect::<String>()
-);
+fn using_trait_extension_should_work() {
+  let input = "This is a string \n with \r some \n\r\n random newlines\r\r\n\n";
+  assert_eq!(
+    "This is a string \n with \n some \n\n random newlines\n\n\n",
+    input.chars().normalized().collect::<String>()
+  );
+}
 ```
 
 ## License
