@@ -12,6 +12,11 @@ tasks:
   clean:
     desc: Cleans all targets
     cmds:
+
+  clippy:
+    desc: Runs clippy for all targets
+    cmds:
+      - cmd: cargo +stable clippy --all-targets
       - cmd: cargo +stable clean
 
   cov:
@@ -31,11 +36,6 @@ tasks:
     cmds:
       - cmd: cargo +stable llvm-cov clean
       - cmd: cargo +stable llvm-cov --no-cfg-coverage --json --summary-only | coverio
-
-  clippy:
-    desc: Runs clippy for all targets
-    cmds:
-      - cmd: cargo +stable clippy --all-targets
 
   doc:
     desc: Generates documentation
