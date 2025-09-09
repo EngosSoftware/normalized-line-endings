@@ -1,7 +1,7 @@
 # Normalized line endings
 
 [![Crates.io][crates-badge]][crates-url]
-![Code coverage][coverage-badge]
+[![Code coverage][cov-badge-normalized-line-endings]][cov-url]
 ![build Linux][build-badge-linux]
 ![build Windows][build-badge-windows]
 ![build MacOs][build-badge-macos]
@@ -24,10 +24,11 @@
 [build-badge-windows]: https://github.com/EngosSoftware/normalized-line-endings/actions/workflows/build-windows.yml/badge.svg
 [build-badge-macos]: https://github.com/EngosSoftware/normalized-line-endings/actions/workflows/build-macos.yml/badge.svg
 [build-badge-macos-arm64]: https://github.com/EngosSoftware/normalized-line-endings/actions/workflows/build-macos-arm64.yml/badge.svg
-[coverage-badge]: https://img.shields.io/badge/coverage-100%25%20%E2%94%82%20100%25%20%E2%94%82%20100%25-21b577.svg
-[cc-badge]: https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg
+[cov-url]: https://crates.io/crates/coverio
+[cov-badge-normalized-line-endings]: https://img.shields.io/badge/cov-100%25-21b577.svg
+[cc-badge]: https://img.shields.io/badge/Contributor%20Covenant-2.1-blue.svg
 [cc-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/CODE_OF_CONDUCT.md
-[mbh-badge]: https://img.shields.io/badge/Made_by-HUMAN-d35400.svg
+[mbh-badge]: https://img.shields.io/badge/Made_by-HUMAN-red.svg
 [repository-url]: https://github.com/EngosSoftware/normalized-line-endings
 
 ## Overview
