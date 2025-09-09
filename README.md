@@ -9,7 +9,7 @@
 [![MIT licensed][mit-badge]][mit-license-url]
 [![Apache 2.0 licensed][apache-badge]][apache-license-url]
 [![Contributor Covenant][cc-badge]][cc-url]
-[![Made by Human][mbh-badge]][cc-url]
+[![Made by Human][made-by-human-badge]][made-by-human-url]
 
 [crates-badge]: https://img.shields.io/crates/v/normalized-line-endings.svg
 [crates-url]: https://crates.io/crates/normalized-line-endings
@@ -28,8 +28,11 @@
 [cov-badge-normalized-line-endings]: https://img.shields.io/badge/cov-100%25-21b577.svg
 [cc-badge]: https://img.shields.io/badge/Contributor%20Covenant-2.1-blue.svg
 [cc-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/CODE_OF_CONDUCT.md
-[mbh-badge]: https://img.shields.io/badge/Made_by-HUMAN-red.svg
+[made-by-human-badge]: https://img.shields.io/badge/Made_by-HUMAN-red.svg
+[made-by-human-url]: https://github.com/DariuszDepta
 [repository-url]: https://github.com/EngosSoftware/normalized-line-endings
+
+**Line endings normalizer**
 
 ## Overview
 
