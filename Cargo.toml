@@ -6,6 +6,7 @@ description = "Returns an iterator over characters with all line endings convert
 documentation = "https://docs.rs/normalized-line-endings"
 repository = "https://github.com/EngosSoftware/normalized-line-endings.git"
 keywords = ["normalized", "line", "endings", "iterator"]
+homepage = "https://engossoftware.github.io/normalized-line-endings/"
 license = "MIT OR Apache-2.0"
 edition = "2021"
 exclude = [
@@ -13,7 +14,6 @@ exclude = [
     "Taskfile.yml",
     ".github/",
     ".gitignore",
-    "NOTES_AT_FUTURE_ME.md",
     "CODE_OF_CONDUCT.md",
-    "CITATION.cff"
+    "manual/"
 ]
