@@ -1,15 +1,15 @@
-# Normalized line endings
+# normalized-line-endings
 
-[![Crates.io][crates-badge]][crates-url]
+[![crates.io][crates-badge]][crates-url]
 [![Code coverage][cov-badge-normalized-line-endings]][cov-url]
 ![build Linux][build-badge-linux]
 ![build Windows][build-badge-windows]
-![build MacOs][build-badge-macos]
-![build MacOs arm64][build-badge-macos-arm64]
+![build macOs][build-badge-macos]
+![build macOs arm64][build-badge-macos-arm64]
 [![MIT licensed][mit-badge]][mit-license-url]
 [![Apache 2.0 licensed][apache-badge]][apache-license-url]
 [![Contributor Covenant][cc-badge]][cc-url]
-[![Made by Human][made-by-human-badge]][made-by-human-url]
+[![mbh][mbh-badge]][mbh-url]
 
 [crates-badge]: https://img.shields.io/crates/v/normalized-line-endings.svg
 [crates-url]: https://crates.io/crates/normalized-line-endings
@@ -28,17 +28,19 @@
 [cov-badge-normalized-line-endings]: https://img.shields.io/badge/cov-100%25-21b577.svg
 [cc-badge]: https://img.shields.io/badge/Contributor%20Covenant-2.1-blue.svg
 [cc-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/CODE_OF_CONDUCT.md
-[made-by-human-badge]: https://img.shields.io/badge/Made_by-HUMAN-red.svg
-[made-by-human-url]: https://github.com/DariuszDepta
+[mbh-badge]: https://img.shields.io/badge/Made_by-HUMAN-D81B60.svg
+[mbh-url]: https://github.com/DariuszDepta
 [repository-url]: https://github.com/EngosSoftware/normalized-line-endings
+[es-badge]: https://img.shields.io/badge/Brought_to_you_by-Engos_Software-43A047.svg 
+[es-url]: https://engos.de
 
 **Line endings normalizer**
 
 ## Overview
 
-The **Normalized line endings** crate provides an iterator over characters
-with normalized line endings, meaning all valid line endings in the input
-are converted to a single newline character: `\n` (U+000A), like this:
+This crate provides an iterator over characters with normalized line endings,
+meaning all valid line endings in the input are converted to a single newline
+character: `\n` (U+000A), like this:
 
 - `\n` → `\n`
 - `\r` → `\n`
@@ -46,8 +48,6 @@ are converted to a single newline character: `\n` (U+000A), like this:
  
 The normalized iterator can be created using standalone function `normalized`
 or by calling the method `normalized` on any iterator over characters.
-
-This work was inspired by [normalize-line-endings](https://crates.io/crates/normalize-line-endings) crate.
 
 ## Examples
 
@@ -90,10 +90,10 @@ at your option.
 
 ## Contribution
 
-Any contributions to [**normalized-line-endings**][repository-url] are greatly appreciated.
+Any contributions to [normalized-line-endings][repository-url] are greatly appreciated.
 All contributions intentionally submitted for inclusion in the work by you,
 shall be dual licensed as above, without any additional terms or conditions.
 
----
+⎯⎯⎯ 
 
-Brought to you with 💙 by [Engos Software](https://engos.de)
+[![Engos Software][es-badge]][es-url]
