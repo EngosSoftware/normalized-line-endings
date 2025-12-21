@@ -12,6 +12,8 @@ tasks:
   clean:
     desc: Cleans all targets
     cmds:
+      - cmd: cargo clean
+      - cmd: rm -rf ./manual/book
 
   clippy:
     desc: Runs clippy for all targets
@@ -61,6 +63,16 @@ tasks:
     desc: Runs code formatter
     cmds:
       - cmd: cargo +nightly fmt
+
+  mbuild:
+    desc: Builds manual from its markdown files
+    cmds:
+      - cmd: cd manual && mdbook build
+
+  mserve:
+    desc: Serves the manual locally and rebuilds it on changes
+    cmds:
+      - cmd: cd manual && mdbook serve
 
   test:
     desc: Runs tests in debug mode

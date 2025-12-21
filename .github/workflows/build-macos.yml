@@ -1,12 +1,12 @@
-# Apple macOS x86_64
-
 name: macOs
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
       - release/**
+      - develop/**
   pull_request:
 
 env:

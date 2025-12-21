@@ -1,12 +1,12 @@
-# Linux x86_64
-
 name: Linux
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
       - release/**
+      - develop/**
   pull_request:
 
 env:

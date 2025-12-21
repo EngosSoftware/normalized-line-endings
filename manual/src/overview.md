@@ -1,0 +1,3 @@
+**Line endings normalizer**
+
+# Overview
