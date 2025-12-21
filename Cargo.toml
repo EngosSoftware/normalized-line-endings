@@ -1,6 +1,6 @@
 [package]
 name = "normalized-line-endings"
-version = "1.0.3"
+version = "1.0.4"
 authors = ["Dariusz Depta <depta@engos.de>"]
 description = "Returns an iterator over characters with all line endings converted to \\n (U+000A)"
 documentation = "https://docs.rs/normalized-line-endings"
