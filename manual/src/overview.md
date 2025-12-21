@@ -20,13 +20,11 @@ or by calling the method `normalized` on any iterator over characters.
 ```rust
 use normalized_line_endings::normalized;
 
-fn main() {
-  let input = "This is a string \n with \r some \n\r\n random newlines\r\r\n\n";
-  assert_eq!(
-    "This is a string \n with \n some \n\n random newlines\n\n\n",
-    normalized(input.chars()).collect::<String>()
-  );
-}
+let input = "This is a string \n with \r some \n\r\n random newlines\r\r\n\n";
+assert_eq!(
+  "This is a string \n with \n some \n\n random newlines\n\n\n",
+  normalized(input.chars()).collect::<String>()
+);
 ```
 
 ### Using [Normalized] trait extension
@@ -34,13 +32,11 @@ fn main() {
 ```rust
 use normalized_line_endings::Normalized;
 
-fn main() {
-  let input = "This is a string \n with \r some \n\r\n random newlines\r\r\n\n";
-  assert_eq!(
-    "This is a string \n with \n some \n\n random newlines\n\n\n",
-    input.chars().normalized().collect::<String>()
-  );
-}
+let input = "This is a string \n with \r some \n\r\n random newlines\r\r\n\n";
+assert_eq!(
+  "This is a string \n with \n some \n\n random newlines\n\n\n",
+  input.chars().normalized().collect::<String>()
+);
 ```
 
 [normalized()]: https://docs.rs/normalized-line-endings/latest/normalized_line_endings/fn.normalized.html
