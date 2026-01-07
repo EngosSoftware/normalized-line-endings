@@ -23,8 +23,8 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
     name: Build manual
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout sources
         uses: actions/checkout@v6
@@ -50,17 +50,13 @@ jobs:
         with:
           path: manual/book
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-
   deploy:
+    name: Deploy manual
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
-    name: Deploy manual
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

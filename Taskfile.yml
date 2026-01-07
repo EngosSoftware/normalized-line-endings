@@ -62,17 +62,19 @@ tasks:
   fmt:
     desc: Runs code formatter
     cmds:
-      - cmd: cargo +nightly fmt
+      - cmd: cargo +stable fmt
 
-  mbuild:
-    desc: Builds manual from its markdown files
+  manual:
+    desc: Builds the manual from its markdown files
     cmds:
       - cmd: cd manual && mdbook build
 
-  mserve:
-    desc: Serves the manual locally and rebuilds it on changes
+  serve:
+    desc: Serves the manual locally and rebuilds on changes
+    silent: true
+    ignore_error: true
     cmds:
-      - cmd: cd manual && mdbook serve
+      - cmd: cd manual && mdbook serve || true
 
   test:
     desc: Runs tests in debug mode
