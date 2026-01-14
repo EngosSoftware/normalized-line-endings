@@ -1,4 +1,5 @@
 [book]
 title = "normalized-line-endings"
 authors = ["Dariusz Depta"]
+description = "Line endings normalizer"
 language = "en"

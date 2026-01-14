@@ -13,7 +13,7 @@ character: `\n` (U+000A), like this:
 The normalized iterator can be created using standalone function `normalized`
 or by calling the method `normalized` on any iterator over characters.
 
-## Examples
+# Examples
 
 ### Using standalone function [normalized()]
 
