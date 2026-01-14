@@ -1,4 +1,4 @@
-### normalized-line-endings
+# normalized-line-endings
 
 [![crates.io][crates-badge]][crates-url]
 [![Code coverage][cov-badge-normalized-line-endings]][cov-url]  
