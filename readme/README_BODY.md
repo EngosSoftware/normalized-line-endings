@@ -1,4 +1,4 @@
-# normalized-line-endings
+# Line endings normalizer
 
 ## Overview
 

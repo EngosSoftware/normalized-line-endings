@@ -1,4 +1,4 @@
-**Line endings normalizer**
+### normalized-line-endings
 
 [![crates.io][crates-badge]][crates-url]
 [![Code coverage][cov-badge-normalized-line-endings]][cov-url]  
@@ -35,7 +35,7 @@
 [es-badge]: https://img.shields.io/badge/Brought_to_you_by-Engos_Software-43A047.svg 
 [es-url]: https://engos.de
 
-# normalized-line-endings
+# Line endings normalizer
 
 ## Overview
 
