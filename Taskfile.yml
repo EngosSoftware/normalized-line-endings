@@ -73,6 +73,7 @@ tasks:
     desc: Regenerates README.md file from its parts
     cmds:
       - cmd: (cat readme/README_HEADER.md; echo; cat readme/README_BODY.md; echo; cat readme/README_FOOTER.md) > README.md
+      - cmd: cp readme/README_BODY.md manual/src/readme.md
 
   serve:
     desc: Serves the manual locally and rebuilds on changes

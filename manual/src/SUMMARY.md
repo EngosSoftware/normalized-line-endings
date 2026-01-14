@@ -1,3 +1,3 @@
 # Summary
 
-[README](../../readme/README_BODY.md)
+[README](./readme.md)
