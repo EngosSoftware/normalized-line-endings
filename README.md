@@ -35,7 +35,7 @@
 [es-badge]: https://img.shields.io/badge/Brought_to_you_by-Engos_Software-43A047.svg 
 [es-url]: https://engos.de
 
-**Line endings normalizer**
+# normalized-line-endings
 
 ## Overview
 
