@@ -13,5 +13,5 @@ exclude = [
     "rustfmt.toml",
     "Taskfile.yml",
     "CODE_OF_CONDUCT.md",
-    "manual/",
+    "book/",
 ]
