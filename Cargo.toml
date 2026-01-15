@@ -1,6 +1,6 @@
 [package]
 name = "normalized-line-endings"
-version = "1.0.8"
+version = "1.0.9"
 authors = ["Dariusz Depta <depta@engos.de>"]
 description = "Line endings normalizer"
 documentation = "https://docs.rs/normalized-line-endings"
@@ -15,6 +15,5 @@ include = [
     "LICENSE",
     "LICENSE-MIT",
     "NOTICE",
-    "README.md",
     "manual/src/README.md"
 ]
