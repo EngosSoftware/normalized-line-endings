@@ -1,6 +1,6 @@
 [package]
 name = "normalized-line-endings"
-version = "1.0.11"
+version = "1.0.12"
 authors = ["Dariusz Depta <depta@engos.de>"]
 description = "Line endings normalizer"
 documentation = "https://docs.rs/normalized-line-endings"
@@ -13,6 +13,7 @@ exclude = [
     "rustfmt.toml",
     "Taskfile.yml",
     ".github/",
+    ".gitignore",
     "CODE_OF_CONDUCT.md",
     "manual/"
 ]
