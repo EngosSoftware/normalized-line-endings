@@ -15,3 +15,6 @@ exclude = [
     "CODE_OF_CONDUCT.md",
     "manual/",
 ]
+include = [
+    "manual/src/README.md"
+]
