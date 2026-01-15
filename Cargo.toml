@@ -1,6 +1,6 @@
 [package]
 name = "normalized-line-endings"
-version = "1.0.12"
+version = "1.0.13"
 authors = ["Dariusz Depta <depta@engos.de>"]
 description = "Line endings normalizer"
 documentation = "https://docs.rs/normalized-line-endings"
