@@ -1,4 +1,4 @@
-#![doc = include_str!("../manual/src/README.md")]
+//! # Line endings normalizer
 
 #![no_std]
 #![deny(missing_docs)]
