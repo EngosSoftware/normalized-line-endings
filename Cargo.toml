@@ -1,6 +1,6 @@
 [package]
 name = "normalized-line-endings"
-version = "1.0.9"
+version = "1.0.11"
 authors = ["Dariusz Depta <depta@engos.de>"]
 description = "Line endings normalizer"
 documentation = "https://docs.rs/normalized-line-endings"
@@ -9,11 +9,10 @@ keywords = ["normalized", "line", "endings", "iterator"]
 homepage = "https://engossoftware.github.io/normalized-line-endings/"
 license = "MIT OR Apache-2.0"
 edition = "2021"
-include = [
-    "src",
-    "tests",
-    "LICENSE",
-    "LICENSE-MIT",
-    "NOTICE",
-    "manual/src/README.md"
+exclude = [
+    "rustfmt.toml",
+    "Taskfile.yml",
+    ".github/",
+    "CODE_OF_CONDUCT.md",
+    "manual/"
 ]
