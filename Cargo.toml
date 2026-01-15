@@ -12,8 +12,6 @@ edition = "2021"
 exclude = [
     "rustfmt.toml",
     "Taskfile.yml",
-    ".github/",
-    ".gitignore",
     "CODE_OF_CONDUCT.md",
-    "manual/"
+    "manual/",
 ]
