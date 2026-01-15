@@ -37,7 +37,7 @@ tasks:
     desc: Generates the detailed code coverage badge
     cmds:
       - cmd: cargo +stable llvm-cov clean
-      - cmd: cargo +stable llvm-cov --no-cfg-coverage --json --summary-only | coverio -l coverage -c --tag cov-badge-normalized-line-endings
+      - cmd: cargo +stable llvm-cov --no-cfg-coverage --json --summary-only | coverio -l coverage -c --tag cov-badge
 
   doc:
     desc: Generates documentation
@@ -70,10 +70,10 @@ tasks:
       - cmd: cd manual && mdbook build
 
   readme:
-    desc: Regenerates README.md file from its parts
+    desc: Regenerates README.md file
     cmds:
-      - cmd: cat readme/README_HEADER.md readme/README_BODY.md readme/README_FOOTER.md > README.md
-      - cmd: cp readme/README_BODY.md manual/src/readme.md
+      - cmd: magg readme manual/src/README.md
+      - task: cov-badge
 
   serve:
     desc: Serves the manual locally and rebuilds on changes

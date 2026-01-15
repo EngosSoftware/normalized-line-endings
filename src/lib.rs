@@ -1,4 +1,4 @@
-#![doc = include_str!("../readme/README_BODY.md")]
+#![doc = include_str!("../manual/src/README.md")]
 
 #![no_std]
 #![deny(missing_docs)]

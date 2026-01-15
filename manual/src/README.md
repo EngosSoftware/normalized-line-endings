@@ -1,4 +1,3 @@
-
 # Line endings normalizer
 
 ## Overview
