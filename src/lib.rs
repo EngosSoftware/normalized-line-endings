@@ -1,5 +1,4 @@
 #![doc = include_str!("../docs/README.md")]
-
 #![no_std]
 #![deny(missing_docs)]
 #![deny(rustdoc::broken_intra_doc_links)]

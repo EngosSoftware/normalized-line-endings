@@ -1,0 +1,72 @@
+.tasks
+
+  .build
+    .desc Builds in debug mode
+    .cmd cargo +stable build
+
+  .clean
+    .desc Cleans all targets
+    .cmd cargo clean
+    .cmd rm -rf ./manual/book
+
+  .clippy
+    .desc Runs clippy for all targets
+    .cmd cargo +stable clippy --all-targets
+    .cmd cargo +stable clean
+
+  .cov
+    .desc Generates code coverage report in text format
+    .cmd cargo +stable llvm-cov clean
+    .cmd cargo +stable llvm-cov --no-cfg-coverage
+
+  .cov-html
+    .desc Generates code coverage report in HTML format
+    .cmd cargo +stable llvm-cov clean
+    .cmd cargo +stable llvm-cov --no-cfg-coverage --html --open
+
+  .cov-badge
+    .desc Generates the detailed code coverage badge
+    .cmd cargo +stable llvm-cov clean
+    .cmd cargo +stable llvm-cov --no-cfg-coverage --json --summary-only | coverio -l coverage -c --tag cov-badge
+
+  .doc
+    .desc Generates documentation
+    .cmd cargo +stable doc
+
+  .doc-private
+    .desc Generates documentation
+    .cmd cargo +stable doc --document-private-items
+
+  .doc-open
+    .desc Generates documentation and opens in browser
+    .cmd cargo +stable doc --open
+
+  .doc-private-open
+    .desc Generates documentation and opens in browser
+    .cmd cargo +stable doc --open --document-private-items
+
+  .fmt
+    .desc Runs code formatter
+    .cmd cargo +stable fmt
+
+  .manual
+    .desc Builds the manual from its markdown files
+    .cmd cd manual && mdbook build
+
+  .readme
+    .desc Regenerates README.md file
+    .cmd magg readme
+    .task cov-badge
+
+  .serve
+    .desc Serves the manual locally and rebuilds on changes
+    .cmd mdbook serve
+      .dir manual
+
+  .test
+    .desc Runs tests in debug mode
+    .cmd cargo +stable test
+
+  .testn
+    .desc Runs tests in debug mode
+    .cmd cargo +stable nextest run
