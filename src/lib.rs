@@ -1,4 +1,5 @@
-#![doc = include_str!("../docs/README.md")]
+//! # Line endings normalizer
+
 #![no_std]
 #![deny(missing_docs)]
 #![deny(rustdoc::broken_intra_doc_links)]
@@ -12,4 +13,4 @@ mod normalized;
 pub use annotated::{annotated, Annotated, AnnotatedChar};
 pub use common::{CR, LF};
 pub use line_ending::LineEnding;
-pub use normalized::{normalized, Normalized};
+pub use normalized::Normalized;
