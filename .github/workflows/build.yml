@@ -33,6 +33,7 @@ jobs:
         with:
           toolchain: ${{ env.TOOLCHAIN_STABLE }}
           targets: ${{ matrix.target }}
+          components: rustfmt
       - run: cargo fmt --check
       - run: cargo clippy --all-targets -- -D warnings
       - run: cargo test
