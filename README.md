@@ -1,14 +1,14 @@
 ### normalized-line-endings
 
 [![crates.io][crates-badge]][crates-url]
-[![coverage][cov-badge]][cov-url]  
+[![coverage][cov-badge]][cov-url]
 ![build Linux][build-badge-linux]
 ![build Windows][build-badge-windows]
 ![build macOs][build-badge-macos]
 ![build macOs arm64][build-badge-macos-arm64]  
 [![mit-license][mit-badge]][mit-license-url]
 [![apache-license][apache-badge]][apache-license-url]
-[![cc][cc-badge]][cc-url]  
+[![cc][cc-badge]][cc-url]
 [![mbh][mbh-badge]][mbh-url]
 [![es][es-badge]][es-url]
 
@@ -29,7 +29,7 @@
 [apache-notice-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/NOTICE
 [cc-badge]: https://img.shields.io/badge/Contributor%20Covenant-2.1-4169E1.svg
 [cc-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/CODE_OF_CONDUCT.md
-[mbh-badge]: https://img.shields.io/badge/Made_by_a-HUMAN-DC143C.svg
+[mbh-badge]: https://img.shields.io/badge/Made_by-HUMAN-DC143C.svg
 [mbh-url]: https://github.com/DariuszDepta
 [es-badge]: https://img.shields.io/badge/at-Engos_Software-32CD32.svg
 [es-url]: https://engos.de
