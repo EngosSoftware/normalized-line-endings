@@ -19,7 +19,7 @@
 [mit-license-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/LICENSE-MIT
 [apache-badge]: https://img.shields.io/badge/License-Apache%202.0-4169E1.svg
 [apache-url]: https://www.apache.org/licenses/LICENSE-2.0
-[apache-license-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/LICENSE-APACHE
+[apache-license-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/LICENSE
 [apache-notice-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/NOTICE
 [cc-badge]: https://img.shields.io/badge/Code%20of%20Conduct-2.1-4169E1.svg
 [cc-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/CODE_OF_CONDUCT.md
@@ -59,7 +59,7 @@ fn main() {
 Licensed under either of
 
 - [MIT license][mit-url] (see [LICENSE-MIT][mit-license-url]) or
-- [Apache License, Version 2.0][apache-url] (see [LICENSE-APACHE][apache-license-url] and [NOTICE][apache-notice-url])
+- [Apache License, Version 2.0][apache-url] (see [LICENSE][apache-license-url] and [NOTICE][apache-notice-url])
 
 at your option.
 
