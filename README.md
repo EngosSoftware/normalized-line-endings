@@ -1,33 +1,13 @@
 ### normalized-line-endings
 
 [![crates.io][crates-badge]][crates-url]
-[![coverage][cov-badge]][cov-url]
 ![build][build-badge]
-[![mit-license][mit-badge]][mit-license-url]
-[![apache-license][apache-badge]][apache-license-url]
-[![cc][cc-badge]][cc-url]
-[![mbh][mbh-badge]][mbh-url]
-[![es][es-badge]][es-url]
+![coverage][cov-badge]
 
 [crates-badge]: https://img.shields.io/crates/v/normalized-line-endings.svg
 [crates-url]: https://crates.io/crates/normalized-line-endings
-[cov-badge]: https://img.shields.io/badge/coverage-100%25-21b577.svg
-[cov-url]: https://crates.io/crates/coverio
 [build-badge]: https://github.com/EngosSoftware/normalized-line-endings/actions/workflows/build.yml/badge.svg
-[mit-badge]: https://img.shields.io/badge/License-MIT-4169E1.svg
-[mit-url]: https://opensource.org/licenses/MIT
-[mit-license-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/LICENSE-MIT
-[apache-badge]: https://img.shields.io/badge/License-Apache%202.0-4169E1.svg
-[apache-url]: https://www.apache.org/licenses/LICENSE-2.0
-[apache-license-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/LICENSE
-[apache-notice-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/NOTICE
-[cc-badge]: https://img.shields.io/badge/Code%20of%20Conduct-2.1-4169E1.svg
-[cc-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/CODE_OF_CONDUCT.md
-[mbh-badge]: https://img.shields.io/badge/Made_by-HUMAN-DC143C.svg
-[mbh-url]: https://github.com/DariuszDepta
-[es-badge]: https://img.shields.io/badge/at-Engos_Software-32CD32.svg
-[es-url]: https://engos.de
-[repository-url]: https://github.com/EngosSoftware/normalized-line-endings
+[cov-badge]: https://img.shields.io/badge/coverage-100%25-21b577.svg
 
 # Line endings normalizer
 
@@ -58,13 +38,15 @@ fn main() {
 
 Licensed under either of
 
-- [MIT license][mit-url] (see [LICENSE-MIT][mit-license-url]) or
-- [Apache License, Version 2.0][apache-url] (see [LICENSE][apache-license-url] and [NOTICE][apache-notice-url])
+ * Apache License, Version 2.0
+   ([LICENSE-APACHE](LICENSE-APACHE) or <http://www.apache.org/licenses/LICENSE-2.0>)
+ * MIT license
+   ([LICENSE-MIT](LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
 
 at your option.
 
 ## Contribution
 
-Any contributions to [normalized-line-endings][repository-url] are greatly appreciated.
-All contributions intentionally submitted for inclusion in the work by you,
-shall be dual licensed as above, without any additional terms or conditions.
+Unless you explicitly state otherwise, any contribution intentionally submitted
+for inclusion in the work by you, as defined in the Apache-2.0 license, shall be
+dual licensed as above, without any additional terms or conditions.
