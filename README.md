@@ -37,8 +37,6 @@
 
 # Line endings normalizer
 
-## Overview
-
 This crate provides an iterator over characters with normalized line endings,
 meaning all valid line endings in the input are converted to a single newline
 character: `\n` (U+000A), like this:
@@ -47,34 +45,16 @@ character: `\n` (U+000A), like this:
 - `\r` → `\n`
 - `\r\n` → `\n`
  
-The normalized iterator can be created using standalone function `normalized`
-or by calling the method `normalized` on any iterator over characters.
-
-## Examples
-
-### Using standalone function
-
-```rust
-use normalized_line_endings::normalized;
-
-fn using_standalone_function_should_work() {
-  let input = "This is a string \n with \r some \n\r\n random newlines\r\r\n\n";
-  assert_eq!(
-    "This is a string \n with \n some \n\n random newlines\n\n\n",
-    normalized(input.chars()).collect::<String>()
-  );
-}
-```
-
-### Using trait extension
+The normalized iterator can be created by calling method `normalized`
+on any iterator over characters, like in this example:
 
 ```rust
 use normalized_line_endings::Normalized;
 
-fn using_trait_extension_should_work() {
-  let input = "This is a string \n with \r some \n\r\n random newlines\r\r\n\n";
+fn main() {
+  let input = "Lorem\nipsum\rdolor\n\r\nsit\r\r\n\n";
   assert_eq!(
-    "This is a string \n with \n some \n\n random newlines\n\n\n",
+    "Lorem\nipsum\ndolor\n\nsit\n\n\n",
     input.chars().normalized().collect::<String>()
   );
 }
@@ -94,4 +74,3 @@ at your option.
 Any contributions to [normalized-line-endings][repository-url] are greatly appreciated.
 All contributions intentionally submitted for inclusion in the work by you,
 shall be dual licensed as above, without any additional terms or conditions.
-
