@@ -4,6 +4,18 @@
 #![deny(rustdoc::missing_crate_level_docs)]
 
 //! # Line endings normalizer
+//!
+//! ## Usage
+//!
+//! ```
+//! use normalized_line_endings::Normalized;
+//!
+//! let input = "Lorem \n ipsum \r dolor \n\r\n sit \r\r\n\n amet";
+//! assert_eq!(
+//!   "Lorem \n ipsum \n dolor \n\n sit \n\n\n amet",
+//!   input.chars().normalized().collect::<String>()
+//! );
+//! ```
 
 /// Trait extension for iterating over characters with normalized line endings.
 pub trait Normalized: Iterator<Item = char> {
@@ -14,9 +26,9 @@ pub trait Normalized: Iterator<Item = char> {
     /// ```
     /// use normalized_line_endings::Normalized;
     ///
-    /// let input = "Lorem\nipsum\rdolor\n\r\nsit\r\r\n\n";
+    /// let input = "Lorem \n ipsum \r dolor \n\r\n sit \r\r\n\n amet";
     /// assert_eq!(
-    ///   "Lorem\nipsum\ndolor\n\nsit\n\n\n",
+    ///   "Lorem \n ipsum \n dolor \n\n sit \n\n\n amet",
     ///   input.chars().normalized().collect::<String>()
     /// );
     /// ```

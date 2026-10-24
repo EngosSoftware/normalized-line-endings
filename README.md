@@ -25,7 +25,7 @@
 [mit-license-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/LICENSE-MIT
 [apache-badge]: https://img.shields.io/badge/License-Apache%202.0-4169E1.svg
 [apache-url]: https://www.apache.org/licenses/LICENSE-2.0
-[apache-license-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/LICENSE
+[apache-license-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/LICENSE-APACHE
 [apache-notice-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/NOTICE
 [cc-badge]: https://img.shields.io/badge/Contributor%20Covenant-2.1-4169E1.svg
 [cc-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/CODE_OF_CONDUCT.md
@@ -52,9 +52,9 @@ on any iterator over characters, like in this example:
 use normalized_line_endings::Normalized;
 
 fn main() {
-  let input = "Lorem\nipsum\rdolor\n\r\nsit\r\r\n\n";
+  let input = "Lorem \n ipsum \r dolor \n\r\n sit \r\r\n\n amet";
   assert_eq!(
-    "Lorem\nipsum\ndolor\n\nsit\n\n\n",
+    "Lorem \n ipsum \n dolor \n\n sit \n\n\n amet",
     input.chars().normalized().collect::<String>()
   );
 }
@@ -64,8 +64,8 @@ fn main() {
 
 Licensed under either of
 
+- [Apache License, Version 2.0][apache-url] (see [LICENSE-APACHE][apache-license-url] and [NOTICE][apache-notice-url])
 - [MIT license][mit-url] (see [LICENSE-MIT][mit-license-url]) or
-- [Apache License, Version 2.0][apache-url] (see [LICENSE][apache-license-url] and [NOTICE][apache-notice-url])
 
 at your option.
 
