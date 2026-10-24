@@ -27,7 +27,7 @@
 [apache-url]: https://www.apache.org/licenses/LICENSE-2.0
 [apache-license-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/LICENSE-APACHE
 [apache-notice-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/NOTICE
-[cc-badge]: https://img.shields.io/badge/Contributor%20Covenant-2.1-4169E1.svg
+[cc-badge]: https://img.shields.io/badge/Code%20of%20Conduct-2.1-4169E1.svg
 [cc-url]: https://github.com/EngosSoftware/normalized-line-endings/blob/main/CODE_OF_CONDUCT.md
 [mbh-badge]: https://img.shields.io/badge/Made_by-HUMAN-DC143C.svg
 [mbh-url]: https://github.com/DariuszDepta
