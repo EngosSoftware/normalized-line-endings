@@ -21,7 +21,7 @@ character: `\n` (U+000A), like this:
 - `\r` → `\n`
 - `\r\n` → `\n`
  
-The normalized iterator can be created by calling method `normalized`
+The normalized iterator can be created by calling the method `normalized`
 on any iterator over characters, like in this example:
 
 ```rust
