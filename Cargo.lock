@@ -5,4 +5,4 @@ version = 4
 
 [[package]]
 name = "normalized-line-endings"
-version = "1.0.14"
+version = "2.0.0"

@@ -1,5 +1,14 @@
 .tasks
 
+  .all
+    .desc Runs all tasks
+    .task clean
+    .task fmt
+    .task clippy
+    .task build
+    .task test
+    .task cov
+
   .build
     .desc Builds in debug mode
     .cmd cargo +stable build
@@ -11,7 +20,7 @@
 
   .clippy
     .desc Runs clippy for all targets
-    .cmd cargo +stable clippy --all-targets
+    .cmd cargo +stable clippy --all-targets -- -D warnings -W clippy::pedantic
     .cmd cargo +stable clean
 
   .cov
