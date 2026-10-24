@@ -8,6 +8,9 @@ on:
       - release/**
   pull_request:
 
+env:
+  TOOLCHAIN_STABLE: 1.85.0
+
 jobs:
   build:
     name: ${{ matrix.target }}
@@ -26,8 +29,9 @@ jobs:
             target: x86_64-pc-windows-msvc
     steps:
       - uses: actions/checkout@v7
-      - uses: dtolnay/rust-toolchain@1.85.0
+      - uses: dtolnay/rust-toolchain@stable
         with:
+          toolchain: ${{ env.TOOLCHAIN_STABLE }}
           targets: ${{ matrix.target }}
       - run: cargo fmt --check
       - run: cargo clippy --all-targets -- -D warnings
