@@ -5,8 +5,6 @@
 
 //! # Line endings normalizer
 //!
-//! ## Usage
-//!
 //! ```
 //! use normalized_line_endings::Normalized;
 //!

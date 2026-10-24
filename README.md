@@ -64,8 +64,8 @@ fn main() {
 
 Licensed under either of
 
-- [Apache License, Version 2.0][apache-url] (see [LICENSE-APACHE][apache-license-url] and [NOTICE][apache-notice-url])
 - [MIT license][mit-url] (see [LICENSE-MIT][mit-license-url]) or
+- [Apache License, Version 2.0][apache-url] (see [LICENSE-APACHE][apache-license-url] and [NOTICE][apache-notice-url])
 
 at your option.
 
