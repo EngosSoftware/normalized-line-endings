@@ -1,4 +1,4 @@
-//! # Normalized iterator implementation
+//! # Line endings normalizer
 
 /// Trait extension for iterating over characters with normalized line endings.
 pub trait Normalized: Iterator<Item = char> {
@@ -17,11 +17,8 @@ pub trait Normalized: Iterator<Item = char> {
     /// ```
     fn normalized(self) -> impl Iterator<Item = char>
     where
-        Self: Sized;
-}
-
-impl<I: Iterator<Item = char>> Normalized for I {
-    fn normalized(self) -> impl Iterator<Item = char> {
+        Self: Sized,
+    {
         Normalizer {
             iter: self,
             next: None,
@@ -29,6 +26,9 @@ impl<I: Iterator<Item = char>> Normalized for I {
     }
 }
 
+impl<I: Iterator<Item = char>> Normalized for I {}
+
+/// Line endings normalizer.
 struct Normalizer<I: Iterator<Item = char>> {
     iter: I,
     next: Option<char>,
