@@ -62,4 +62,4 @@ impl<I: Iterator<Item = char>> Iterator for Normalizer<I> {
 }
 
 /// Implement normalizer for iterator over characters.
-impl<I: Iterator<Item = char>> crate::Normalized for I {}
+impl<I: Iterator<Item = char>> Normalized for I {}
